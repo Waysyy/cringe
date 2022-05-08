@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Список медицинских учреждений</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jQuery.js"></script>
+</head>
+
+
+<body>
+    <h2>Медицинские учреждения</h2>
+
+    <h4>1.	Получить перечень и общее число врачей указанного профиля для конкретного медицинского учреждения, больницы, либо поликлиники, либо всех медицинских учреждений города</h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req1">для конкретного медицинского учреждения</button>
+     <button id="req2">для больницы</button>
+     <button id="req3">для поликлиники</button>
+     <button id="req4">Для всех медицинских учреждений города</button>
+     
+     
+    </div>
+
+    <h4>2.	Получить перечень и общее число обслуживающего персонала указанной специальности для конкретного медицинского учреждения, больницы, либо поликлиники, либо всех медицинских учреждений города. </h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req5">для конкретного медицинского учреждения</button>
+     <button id="req6">для больницы</button>
+     <button id="req7">для поликлиники</button>
+     <button id="req8">Для всех медицинских учреждений города</button>
+     
+     
+    </div>
+    <h4>3.	Получить перечень и общее число врачей указанного профиля, стаж работы которых не менее заданного для конкретного медицинского учреждения, больницы, либо поликлиники, либо всех медицинских учреждений города. </h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req9">для конкретного медицинского учреждения</button>
+     <button id="req10">для больницы</button>
+     <button id="req11">для поликлиники</button>
+     <button id="req12">Для всех медицинских учреждений города</button>
+     
+     
+    </div>
+    <h4>4.	Получить перечень и общее число врачей указанного профиля со степенью кандидата или доктора медицинских наук, со званием доцента или профессора для конкретного медицинского учреждения, либо больницы, либо поликлиники, либо всех медицинских учреждений города. </h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req13">для конкретного медицинского учреждения</button>
+     <button id="req14">для больницы</button>
+     <button id="req15">для поликлиники</button>
+     <button id="req16">Для всех медицинских учреждений города</button>
+     
+     
+    </div>
+    <h4>5.	Получить перечень пациентов, прошедших стационарное лечение в указанной больнице, либо у конкретного врача за некоторый промежуток времени. </h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req17">в указанной больнице</button>
+     <button id="req18">у конкретного врача за некоторый промежуток времени</button>
+     
+     
+    </div>
+    <h4>6.	Получить перечень пациентов, наблюдающихся в врача указанного профиля в конкретной поликлинике. </h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req19">получить</button>
+     
+     
+    </div>
+    <h4>7.	Получить общее число палат, коек указанной больницы в общем и по каждому отделению, а также число свободных коек по каждому отделению и число полностью свободных палат. </h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req20">общее число палат</button>
+     <button id="req21">число коек по каждому отделению</button>
+     <button id="req22">Число коек в общем</button>
+     <button id="req23">Число свободных коек по каждому отделению</button>
+     <button id="req24">Число полностью свободных палат по каждому отделению</button>
+     
+     
+    </div>
+    <h4>8.	Получить общее число кабинетов указанной поликлиники, число посещений каждого кабинета за определенный период. </h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req25">Общее число кабинетов указанной поликлиники</button>
+     <button id="req26">Число посещений каждого кабинета за определенный период</button>
+     
+     
+    </div>
+    <h4>9.	Получить данные о загрузке (число пациентов, у которых врач в настоящее время является лечащим врачом) для указанного врача, либо всех врачей больницы, либо для всех врачей названного профиля.  </h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req27">для всех врачей больницы</button>
+     <button id="req28">Для указанного профиля</button>
+     <button id="req29">Для указанного врача</button>
+     
+     
+    </div>
+    <h4>10.	Получить перечень пациентов, перенесших операции в указанной больнице, либо поликлинике, либо у конкретного врача за некоторый промежуток времени. </h4>
+
+    <div class="cleared"></div>
+    <div style="display: block;
+                    margin: 0 auto;
+                    width: 500px;">
+     <button id="req30">перенесших операции в указанной больнице</button>
+     <button id="req31">перенесших операции в указанной поликлинике</button>
+     <button id="req32">у конкретного врача за некоторый промежуток времени</button>
+     
+     
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <table id="tableMain" class="table table-condensed table-striped table-bordered">
+        <thead></thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script  src="js/url2.js"></script>
+</body>
+
+</html>

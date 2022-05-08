@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Список медицинских учреждений</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jQuery.js"></script>
+</head>
+
+
+<body>
+    <h2>Список медицинских учреждений</h2>
+    <h3>Добавить/Изменить</h3>
+    <form name="userForm">
+        <input type="hidden" name="id" value="0" />
+        <h3>Информация о медицинском учреждении</h3>
+        <div class="form-group">
+            <label for="name">Тип Медицинского учжреждения:</label>
+            <input class="form-control" name="type" />
+        </div>
+        <div class="form-group">
+            <label for="age">Название Медицинского учжреждения:</label>
+            <input class="form-control" name="name" />
+
+        </div>
+        <div class="form-group">
+            <label for="age">Город:</label>
+            <input class="form-control" name="city" />
+        </div>
+        <div class="form-group">
+            <label for="age">Номер Медицинского учжреждения:</label>
+            <input class="form-control" name="number" />
+
+        </div>
+        <h3>Информация о сотруднике</h3>
+        <div class="form-group">
+            <label for="age">Фамилия сотрудника:</label>
+            <input class="form-control" name="lastname" />
+        </div>
+        <div class="form-group">
+            <label for="name">Стаж сотрудника:</label>
+            <input class="form-control" name="experience" />
+        </div>
+        <div class="form-group">
+            <label for="age">Специальность</label>
+            <input class="form-control" name="speciality" />
+
+        </div>
+        <div class="form-group">
+            <label for="age">Номер корпуса</label>
+            <input class="form-control" name="numberCorp" />
+
+        </div>
+        <div class="form-group">
+            <label for="age">Ученая степень:</label>
+            <input class="form-control" name="degree" />
+        </div>
+        <div class="form-group">
+            <label for="age">Количество отпускных дней:</label>
+            <input class="form-control" name="vacation" />
+        </div>
+        <div class="form-group">
+            <label for="name">Зарплата:</label>
+            <input class="form-control" name="salary" />
+        </div>
+        <div class="form-group">
+            <label for="age">Номер клиники в которой работает:</label>
+            <input class="form-control" name="worksClinic" />
+
+        </div>
+        <div class="form-group">
+            <label for="age">Номер больницы в которой работает:</label>
+            <input class="form-control" name="worksHospital" />
+        </div>
+        <div class="form-group">
+            <label for="age">Число проведенных операций:</label>
+            <input class="form-control" name="countOperations" />
+        </div>
+        <div class="form-group">
+            <label for="name">Летальных исходов:</label>
+            <input class="form-control" name="lethal" />
+        </div>
+        <div class="form-group">
+            <label for="age">Успешных операций:</label>
+            <input class="form-control" name="successful" />
+
+        </div>
+        <h3>Отделения</h3>
+        <div class="form-group">
+            <label for="age">Название отделения:</label>
+            <input class="form-control" name="department" />
+        </div>
+        <div class="form-group">
+            <label for="age">Специализация:</label>
+            <input class="form-control" name="specialization" />
+        </div>
+        <h3>Палаты</h3>
+        <div class="form-group">
+            <label for="name">Номер палаты:</label>
+            <input class="form-control" name="numbercorps" />
+        </div>
+        <div class="form-group">
+            <label for="age">Количество коек в палате:</label>
+            <input class="form-control" name="numberBeds" />
+
+        </div>
+        <div class="form-group">
+            <label for="age">Занятых коек:</label>
+            <input class="form-control" name="busy" />
+        </div>
+        <div class="form-group">
+            <label for="age">Название кабинета:</label>
+            <input class="form-control" name="cabinetsname" />
+        </div>
+        <div class="form-group">
+            <label for="name">Номер кабинета:</label>
+            <input class="form-control" name="cabinetsnumber" />
+        </div>
+        <h3>О лаборатории</h3>
+        <div class="form-group">
+            <label for="age">Заключенный контракт :</label>
+            <input class="form-control" name="contract" />
+
+        </div>
+        <div class="form-group">
+            <label for="age">Профиль лаборатории:</label>
+            <input class="form-control" name="profile" />
+        </div>
+        <h3>О пациете</h3>
+        <div class="form-group">
+            <label for="age">Имя пациента:</label>
+            <input class="form-control" name="patientsname" />
+        </div>
+        <h3>Анамнез (История болезней)</h3>
+        <div class="form-group">
+            <label for="name">Диагноз:</label>
+            <input class="form-control" name="diagnos" />
+        </div>
+        <div class="form-group">
+            <label for="name">Дата болезни (начало и конец):</label>
+            <input class="form-control" name="time1" />
+            <input class="form-control" name="time2" />
+        </div>
+        <div class="form-group">
+            <label for="name">Лечащий врач:</label>
+            <input class="form-control" name="anamnesDoctor" />
+        </div>
+        <div class="form-group">
+            <label for="age">Рекоммендации:</label>
+            <input class="form-control" name="destination" />
+
+        </div>
+        <h3>Проведенные операции</h3>
+        <div class="form-group">
+            <label for="age">Название операции:</label>
+            <input class="form-control" name="operationsName" />
+        </div>
+        <div class="form-group">
+            <label for="age">Врач проводивщий операцию:</label>
+            <input class="form-control" name="docName" />
+        </div>
+        <div class="form-group">
+            <label for="age">Дата операции:</label>
+            <input class="form-control" name="operationDate" />
+        </div>
+        <div class="form-group">
+            <label for="age">Лечащий врач в данный момент:</label>
+            <input class="form-control" name="doctor" />
+        </div>
+    </form>
+    <h3>Краткая информация</h3>
+
+    <br><br><button id="states">Загрузить</button>
+
+    <table id="tableMain" class="table table-condensed table-striped table-bordered">
+        <thead></thead>
+        <tbody>
+        </tbody>
+    </table>
+    <button id="btn">Запросы</button>
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
